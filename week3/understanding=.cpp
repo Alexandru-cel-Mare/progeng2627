@@ -1,0 +1,13 @@
+#include <iostream>
+
+int main(){
+    double a, b, c;
+    a = 1;
+    b = 2;
+    c = a + b;
+    std::cout << c << std::endl;
+    a = 2;
+    std::cout << c << std::endl; //i expect 4 to be printed
+    c = a + b;
+    std::cout << c << std::endl; //ok maybe here 4 will be printed and the previous one will be 3?
+}
